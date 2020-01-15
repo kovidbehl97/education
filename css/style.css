@@ -1,0 +1,461 @@
+/* -----------------------CSS RESET---------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------GLOBAL STYLING-------------------- */
+
+html,
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* ----------------HEADINGS & PARAGRAPHS----------------- */
+
+header h4,
+.mission h4{
+    color: #ffffff;
+    font-family: 'Lato',sans-serif;
+    font-weight: 500;
+}
+
+section h4{
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+}
+
+/* ------------------------LINKS------------------------- */
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------------BUTTONS------------------------ */
+
+.city-btn:link,
+.city-btn:visited{
+    color: rgb(35, 0, 133);
+    margin: 0 0px;
+    background-color: #e4e4e4;
+    padding: 10px;
+    font-size: small;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.city-btn:hover,
+.city-btn:active {
+    background-color: #818181;
+}
+
+.btn-solid{
+    color: #ffffff;
+    background-color: #73990a;
+    padding: 10px;
+    font-size: small;
+    /* margin:5px; */
+}
+
+/* ------------------------------------------------------ */
+/* ------------------------HEADER------------------------ */
+/* ------------------------------------------------------ */
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(14, 124, 0, 0.726), rgba(102, 0, 122, 0.6)), url("img/background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: 0 2px 15px 1px #332F35;
+}
+
+.main-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-container {
+    padding: 0px 10px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.nav-links li{
+    list-style-type: none;
+}
+
+.nav-link {
+    list-style-type: none;
+    margin: 0 20px;
+}
+
+.nav-link a:link,
+.nav-link a:visited {
+    color: #ffffff;
+    padding-bottom: 4px;
+    transition: border-bottom 0.2s;
+    font-family: 'Lato',sans-serif;
+    font-weight: 300;
+}
+
+.nav-link a:hover,
+.nav-link a:active {
+    border-bottom: 1px solid #ffffff;
+}
+
+.main-content{
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+}
+
+.main-content h4{
+    margin-bottom: 1.5rem;
+}
+
+.main-heading-thin{
+    color: #ffffff;
+    font-family: 'Lato',sans-serif;
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.main-heading-bold{
+    color: #ffffff;
+    font-family: 'Lato',sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+/* ------------------------------------------------------ */
+/* -------------------NEWS & EVENTS---------------------- */
+/* ------------------------------------------------------ */
+
+.news{
+    margin: 5rem auto;
+}
+
+.news h4 {
+    padding-bottom: 1.5rem;
+}
+
+.news h2 {
+    font-family: 'Lato',sans-serif;
+    font-weight: 300;
+    font-size: xx-large;
+}
+
+.news-carousel {
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-carousel p{
+    margin: 1.5rem auto;
+    font-family: 'Lato',sans-serif;
+}
+
+.news-image{
+    text-align: right;
+}
+
+.news-image-info{
+    padding-left: 5%;
+}
+
+.news .btn-carousel{
+    text-align: right;
+}
+
+.btn-carousel .btn-solid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+/* ------------------------------------------------------ */
+/* ----------------------ACTIVITIES---------------------- */
+/* ------------------------------------------------------ */
+
+.activities{
+    text-align: center;
+    background-color: #e9e9e9;
+}
+.activity{
+    padding-top: 3rem;
+    padding-bottom: 3rem
+}
+.activities h1{
+    font-family: 'Lato',sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+}
+.activities h3 {
+    font-family: 'Lato',sans-serif;
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+.carousel-img img{
+    max-width: 13.5rem;
+    border-radius: 0.3em 0.3em 0 0;
+    transition: transform 0.5s;
+
+}
+
+.carousel-info {
+    background-color: rgb(0, 39, 148);
+    border-radius: 0 0 0.3em 0.3em;
+    max-width: 13.5rem;
+    color: #e6e6e6;
+    font-family: 'Lato',sans-serif;
+    transition: transform 0.5s;
+}
+.carousel-info h2 {
+    padding:0.5em 0 0 0.3em;
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.carousel-info p{
+    padding:1em 0 1em 0.6em;
+    text-align: left;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+.card-row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.card{
+    background-color: rgb(0, 39, 148);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3em;
+    
+}
+.card:hover > .carousel-img img,
+.card:hover > .carousel-info,
+.card:active > .carousel-img img,
+.card:active > .carousel-info{
+    transform:scale(1.2);
+    box-shadow: 0 0 10px#000000;
+}
+
+/* ------------------------------------------------------ */
+/* --------------------STAR PERFORMER-------------------- */
+/* ------------------------------------------------------ */
+
+.star{
+    padding:8rem 0;
+    position: relative;
+}
+.star .btn-carousel{
+    margin-top: 3em;
+}
+.star-main {
+    display: flex;
+    position: relative;
+}
+.star-main h2{
+    font-family: 'Lato',sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+.star-main h4{
+    margin-bottom: 1em;
+}
+.star-main h5{
+    font-family: 'Lato',sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.star-quote{
+    max-width: 28rem;
+    padding-left: 3rem;
+}
+.star-quote h6{
+    padding-top: 1rem;
+    font-size: 0.9em;
+}
+.star-heading{
+    max-width: 18rem;
+}
+.stripe{
+    background-color: rgb(0, 39, 148);
+    padding: 3em;
+    text-align: right;
+    padding-right: 10rem;
+    padding-left: 77.8rem;
+    position: absolute;
+    bottom: 5em;
+    left: 0em;
+    z-index: -2;
+}
+.star-main p{
+    color: #949494;
+    font-size: 80px;
+    padding-top: 0.5em;
+}
+.logo-reverse {
+    position: absolute;
+    top:23.4rem;
+    right: 27.5rem;
+    z-index: -1;
+}
+.star-img{
+    border-radius: 0.5em;
+}
+
+/* ------------------------------------------------------ */
+/* ------------------------FIND US----------------------- */
+/* ------------------------------------------------------ */
+
+.find-us{
+    margin-top: 16rem;
+    text-align: center;
+}
+.find-us h2{
+    font-family: 'Lato',sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+.kids-showcase{
+    margin-top: 3rem;
+    display:flex;
+    justify-content: space-between;
+}
+.kids-img{
+    max-width: 13.8rem;
+    border-radius: 0.3rem;
+    transition: transform 0.5s;
+}
+.kids-img:hover{
+    transform: translate(0, -0.7em);
+}
+
+/* ------------------------------------------------------ */
+/* ----------------------THE MISSION--------------------- */
+/* ------------------------------------------------------ */
+.mission{
+    margin-top: 8em;
+    margin-bottom: 8em;
+    height: 80vh;
+    background-image: url(img/mission.jpg);
+    background-size: cover;
+    border-radius: 0.5em;
+}
+.mission h2{
+    padding:0 0 2em 3em;
+    color: #ffffff;
+    font-family: 'Lato',sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    max-width: 15em;
+}
+
+.mission h4{
+    padding:5em 0 1em 9em;
+}
+.mission .btn-solid{
+    margin-left: 11em
+}
+
+/* ------------------------------------------------------ */
+/* ------------------------FOOTER------------------------ */
+/* ------------------------------------------------------ */
+
+footer{
+    padding-top: 5em;
+    background-image: linear-gradient(to bottom right,rgba(14, 124, 0, 0.726), rgba(102, 0, 122, 0.6));
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 2em;
+    font-family: 'Lato',sans-serif;
+    
+}
+footer li{
+    list-style-type: none;
+}
+
+.school{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 2.5em;
+    padding-bottom: 2.5em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.253);
+}
+.school h3{
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.253);
+}
+.school li{
+    font-weight: 300;
+    font-size: 0.95rem;
+    
+}
+.contact{
+    font-weight: 300;
+    padding-bottom: 2.5em;
+}
+.copyright{
+    font-weight: 500;
+    background-image: linear-gradient(#e9e9e9,#e9e9e9);
+    color: #000;
+}
+.copyright-content{
+    display: flex;
+    justify-content: space-between ;
+    padding:1.2em;
+}
+.copyright-content p{
+    font-size: 0.9em;
+    color: rgb(88, 88, 88);
+}
+
+.design-by span{
+    color: rgb(128, 0, 0);
+}
+.social-links ul{
+    display: flex;
+    
+}   
+.social-links li{
+    padding:0 1em;
+}
+.facebook{
+    color: #4267B2;
+}
+.twitter{
+    color: #1DA1F2;
+}
+.linkedin{
+    color: #0073B0;
+}
